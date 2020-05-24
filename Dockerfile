@@ -7,6 +7,10 @@ RUN apt-get install -y python3 python3-pip \
 	curl wget \
 	supervisor \
 	vim
+RUN pip3 install \
+	requests \
+	pymongo \
+	feedparser
 
 CMD [ "useradd --create-home scrapper" ]
 

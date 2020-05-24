@@ -1,1 +1,1 @@
-* * * * *   root    date >> /tmp/date.log
+*/5 * * * *     d=`date`; echo $d >> /tmp/scrapper.log; /usr/bin/python3 /home/scrapper/main.py >> /tmp/scrapper.log
