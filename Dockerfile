@@ -1,6 +1,8 @@
-FROM python:3.8-slim
-RUN pip install --no-cache-dir matplotlib pandas
-
 FROM mongo:latest
 
-CMD [ "python" ]
+
+RUN apt-get update && apt-get upgrade -y
+RUN apt-get install -y python3 python3-pip
+#RUN apt-get install -y mongodb
+
+#CMD [ "python"]
