@@ -12,8 +12,9 @@ services:
             #- PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
         volumes:
           - ./data/db:/data/db
+          - ./project/:/home/scrapper/
         ports:
             - "27017:27017"
             - "22001:22"
-        command: mongod --logpath=/dev/null
+              #command: mongod --logpath=/dev/null
 
